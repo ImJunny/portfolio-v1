@@ -13,8 +13,7 @@ export default function Home() {
           <div className="greeting">
             <h1>
               Welcome to my portfolio. Here you can learn about me and view some
-              of my personal projects. (This project is currently under
-              development.)
+              of my personal projects.
             </h1>
           </div>
         </div>

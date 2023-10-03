@@ -45,7 +45,8 @@ body,
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: "Helvetica", "Arial";
   color: black;
   font-weight: lighter;
@@ -98,6 +99,17 @@ h2 {
 }
 
 .about-container h1 {
+  font-size: 100px;
+  font-weight: bold;
+  padding: 0 0 20px;
+}
+
+.about-container h2 {
+  font-size: 30px;
+}
+
+.about-container h3 {
+  margin-top: 30px;
   font-size: 30px;
 }
 
@@ -107,17 +119,17 @@ h2 {
   bottom: 20px;
   display: flex;
   justify-content: space-between;
-  width: 380px;
+  width: 300px;
 }
 
-.buttons-container a {
+.page a {
   display: flex;
   justify-content: center;
   font-family: "Helvetica", "Arial";
   border-radius: 18px;
   border: 0;
-  padding: 15px;
-  width: 150px;
+  width: 140px;
+  padding: 10px 0px;
   font-size: 20px;
   background-color: rgb(179, 35, 179);
   color: white;
@@ -126,7 +138,7 @@ h2 {
   text-decoration: none;
 }
 
-.buttons-container a:hover {
+.page a:hover {
   background-color: rgb(218, 60, 218);
   cursor: pointer;
 }
@@ -140,21 +152,59 @@ h2 {
   border-radius: 40px;
 }
 
-img {
-  height: 95%;
-  border-radius: 20px;
-}
-
 .project-container {
   height: 100%;
   width: 100%;
-  display: flex;
+  display: grid;
+  row-gap: 30px;
 }
 
+img {
+  height: 305px;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.under {
+  z-index: 0;
+}
+
+.over {
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 0.2s ease;
+}
+.over:hover {
+  opacity: 1;
+}
 .project-info {
-  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  position: relative;
 }
 
-.project-info h1 {
+.project-info-text {
+  justify-content: center;
+  margin-left: 30px;
+}
+
+.project-info-text h1 {
   font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+}
+
+.project-info-text h2 {
+  margin-top: 13px;
+  font-size: 19px;
+}
+
+.project-info-text a {
+  position: absolute;
+  width: auto;
+  right: 0;
+  bottom: 0;
+  padding: 10px 15px;
 }

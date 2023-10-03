@@ -1,6 +1,7 @@
-import { Link as ScrollLink } from "react-scroll";
-import { useState, useEffect } from "react";
+import { Link } from "react-scroll";
 import "../App.css";
+import linkedinSVG from "../images/linkedin.svg";
+import githubSVG from "../images/github.svg";
 
 type CustomLinkProps = {
   to: string;
@@ -9,7 +10,7 @@ type CustomLinkProps = {
 
 function CustomLink({ to, children }: CustomLinkProps) {
   return (
-    <ScrollLink
+    <Link
       className="link"
       to={to}
       spy={true}
@@ -19,7 +20,7 @@ function CustomLink({ to, children }: CustomLinkProps) {
       activeStyle={{ color: "rgb(179, 35, 179)" }}
     >
       {children}
-    </ScrollLink>
+    </Link>
   );
 }
 
@@ -30,7 +31,6 @@ export default function Navbar() {
       <CustomLink to="main">Home</CustomLink>
       <CustomLink to="about">About Me</CustomLink>
       <CustomLink to="projects">Projects</CustomLink>
-      <div className="theme-button" />
     </div>
   );
 }
