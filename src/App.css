@@ -63,6 +63,10 @@ h3 {
   padding: 0 50px;
 }
 
+.link:hover {
+  color: rgb(204, 204, 204);
+}
+
 .page {
   height: 100%+0px;
   background-color: rgb(24, 24, 24);
@@ -207,4 +211,18 @@ img {
   right: 0;
   bottom: 0;
   padding: 10px 15px;
+}
+
+.material-symbols-outlined {
+  color: white;
+  position: fixed;
+  right: 30px;
+  font-size: 35px !important;
+  transition: 0.15s;
+}
+
+.material-symbols-outlined:hover {
+  transform: scale(1.1);
+  color: rgb(204, 204, 204);
+  cursor: pointer;
 }

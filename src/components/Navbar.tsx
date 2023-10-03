@@ -2,6 +2,7 @@ import { Link } from "react-scroll";
 import "../App.css";
 import linkedinSVG from "../images/linkedin.svg";
 import githubSVG from "../images/github.svg";
+import mail from "../images/mail.png";
 
 type CustomLinkProps = {
   to: string;
@@ -31,6 +32,18 @@ export default function Navbar() {
       <CustomLink to="main">Home</CustomLink>
       <CustomLink to="about">About Me</CustomLink>
       <CustomLink to="projects">Projects</CustomLink>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      />
+      <span
+        className="material-symbols-outlined"
+        onClick={() => {
+          window.open("mailto:johnnguyen4501@gmail.com?subject=&body=");
+        }}
+      >
+        mail
+      </span>
     </div>
   );
 }
