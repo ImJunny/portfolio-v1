@@ -1,8 +1,5 @@
 import { Link } from "react-scroll";
 import "../App.css";
-import linkedinSVG from "../images/linkedin.svg";
-import githubSVG from "../images/github.svg";
-import mail from "../images/mail.png";
 
 type CustomLinkProps = {
   to: string;

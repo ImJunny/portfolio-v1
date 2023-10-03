@@ -46,7 +46,7 @@ export default function Projects() {
           >
             This website is my first full-stack application. It was built using
             React and NodeJS. Inspired by Spotify Wrapped, this app uses the
-            Spotify API to gather user data and display them in a fun way.
+            Spotify API to gather and display user data in an interesting way.
           </ProjectInfo>
           <ProjectInfo
             title="Dangle Dood"
